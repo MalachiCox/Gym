@@ -1,0 +1,206 @@
+* {
+    /* border: 4px solid red; */
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #1c1c1c;
+    font-family: GFS Didot;
+    font-size: 100%;
+    color: white;
+}
+
+nav {
+    display: grid;
+    width: 100%;
+    padding: 30px 10px;
+    position: fixed;
+    top: 0px;
+    background-color: #363636;
+    height: 60px;
+    align-content: center;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.item {
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+.home {
+    justify-self: start;
+    font-size: 2em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.item:hover {
+    background: linear-gradient(to right, #974826, rgb(255, 96, 28));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.grid-container {
+    margin-top: 50px;
+    padding: 50px 0px;
+    width: 100%;
+    background-image: url(/images/jean-baptiste-d-mTfhOmhvvQo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 35%;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+}
+
+.grid-item-1 {
+    padding: 0px 20px;
+    font-size: 2em;
+    color: #db6836;
+}
+
+.head {
+    text-align: start;
+    padding-bottom: 50px;
+}
+
+.buttoncontain {
+    display: flex;
+    justify-content: start;
+    justify-items: start;
+}
+
+button{
+    background-image: linear-gradient(to right, #974826, rgb(255, 96, 28));
+    border: 4px solid #974826;
+    color: white;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    align-items: center;
+    font-size: 22px;
+    font-family: GFS Didot;
+}
+
+button:hover {
+    color: white;
+    background: #974826;
+    border: 4px solid #974826;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.head-2 {
+    text-align: end;
+    padding-top: 50px;
+}
+
+.about-container, .cta-container {
+    display: inline-flex;
+    width: 100%;
+    padding: 50px 0px;
+    background-image: linear-gradient(to right, #974826, rgb(255, 96, 28));
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+}
+
+.about-img, .cta-img {
+    display: flex;
+    max-width: 50%;
+    height: auto;
+}
+
+.about-text-container, .cta-text-container {
+    font-size: 2em;
+    margin: 0px 10px;
+    text-align: center;
+}
+
+.about-body {
+    text-align: end;
+}
+
+.about-body-2 {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.cta-body {
+    text-align: start;
+}
+
+footer {
+    margin-bottom: 0px;
+    
+    display: grid;
+    padding: 10px;
+    background-color: #1c1c1c;
+    align-content: center;
+    @media (min-width: 600px) {
+        padding: 20px;
+    }
+}
+
+.bottom {
+    background-color: #1c1c1c;
+    color: white;
+    width: 100%;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: auto;
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: start;
+    font-size: 1.5em;
+}
+
+.bot-head-1 {
+    display: grid;
+    columns: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.bot-head-2 {
+    display: grid;
+    columns: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.bot-head-3 {
+    display: grid;
+    columns: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.bot-link {
+    display: grid;
+    padding: 20px 5px;
+}
+
+.bot-link:hover {
+    background: linear-gradient(to right, #974826, rgb(255, 96, 28));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
